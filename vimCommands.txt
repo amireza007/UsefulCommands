@@ -1,0 +1,110 @@
+:IndentGuidesEnabe
+:nohn #turn off highlights
+:4,34s;^\(\s\+\);\=repeat(' ', len(submatch(0))/2);g   # how to convert 4 spaces to 2
+we use coc-pyright instead of coc-python bc it takes advantange of pylint in a more SENSBILE way, like underlining troubling word in the line
+
+$ -> end of line
+0 -> start of line
+return (enter key) -> Go to next line
+
+G -> EOF
+gg -> start of file
+w -> move to the beginning  of the next word
+b -> move to the beginning of the previous word
+e -> move to end of the next word
+ge ->move to end of the previous word
+
+Selection in Vim
+Vib -> select inside paranthesis
+viB -> select inside curely blocks
+vab -> select inside paranthesis inclusively (including the parantheses too!)
+
+Deletion in Vim
+dw -> delete a word from cursor towards the next word
+db -> delete a word from cursor backwards
+d$ -> delete a line from the cursor onwards
+dG -> delete all lines from the cursor onwards
+
+"*(y or d etc) -> copy stuff into system clipboard
+"_d -> delete in visual mode NOT cut
+diw -> delete the word when cursor is inside the word.
+
+Don't forget where configs of pylint is -> ~/.pylint
+
+:tabnew (DIRR)
+Next tab: gt
+Prior tab: gT
+Numbered tab: (nnn) gt
+
+fn + del = front deletion
+(line number) + G -> go to the line
+ctrl-r -> redo
+<leader>cc -> comment from the cursor
+<leader>cu -> uncomment multiple lines
+<leader> cs -> comment the line (regardless of the location of cursor) #checkout nerdcommenter
+
+got rid of this annoying floating "documentation of functions" in CoC? set this in coc-setting.json, after checking out this website:
+"signature.enable": false
+https://github.com/neoclide/coc.nvim/issues/2233
+
+gd -> go to definition
+
+****
+on the usage of % in :r! (inserting result of a shell into the buffer or the current open) 
++ usage of backslash \ in linux commands
+
+AFAIU the % (if used before !) is used to select the output of a shell command from range 1,$ and replace it into the current buffer. If it's used after !, it acts as the var file name of the current file (+ can be passed to a shell command)
+
+Use these for this file: 
+exp1 :%!ls
+exp2 :r! echo % 
+
+Usage of backslash: it essentially makes the next charater after \, act as a stand-alone character, nothing special used in a particular environment.
+https://unix.stackexchange.com/questions/346650/backslash-usage-in-different-commands
+example (inserting the current date using the "date" func of unix) :r! date "+\%d" (try without \. also with changing the position of the \)
+*****
+
+#TODO
+learn and read about  internal-variables in vim (via :h)
+
+A -> enter insert mode after moving cursor towards the end of the current line
+o -> insert a line below the cursor(+entering insert mode), O -> insert a line above the cursor(+entering insert mode)
+( or ) in normal mode -> jump between sentences
+{ or } in normal mode -> jump between code blocks
+
+
+*when you have a really long line, vim would normally wrap the line by (sometimes) spliting on the word. 
+To make it behave normally, you'll need to use soft wrapping in vim. (:set wrap linewrap)
+
+ctrl+^ -> switch between buffers
+
+:set spell -> turn on spell check
+:set nospell -> obvious
+:set ignorecase -  > disables case sensitivity when searching 
+
+zz -> centering the cursor in case of being in the last line
+:setlocal -> set an option locally (useful in case of having multiple tabs opened)
+
+selected text + u (U) -> changes the selected into lowercase (uppercase) 
+
+#TODO: Learn wemux to do remote collabs in n/vim (see the end of "vim as a python IDE - Martin Brochhaus" video)
+
+Running a specific command immediately entering vim -> nvim -c "THE_COMMAND"
+
+Use :[1,n]j! to Join lines in vim. (:h j)
+
+Use ":sort u" to remove unique duplicate lines from a file
+
+use :x instead of :wq bc it's  better and more efficient this way
+
+Use D to delete the rest of the line from where the curser is
+
+Read more about the neovim's diff mode used in git mergetool to resolve merge conflict
+
+git config merge.tool nvimdiff 
+
+-- To ignore case sensitivity in searches of vim, Add \c to the end of the pattern
+
+Use :Ag (in conjunction with fzf) to search through all files! 
+
+
