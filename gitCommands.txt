@@ -46,4 +46,11 @@ git commit --amend -m "...."
 git clone -b <branchname> <remote-repo-url>
 
 -A shorter way of adding everythin and then committing
-git commit -a -m '....'1
+git commit -a -m '....'
+
+-To rebase is to take the stuff we were didn't commit years! ago and 
+-and put them on top of the things we have done after that
+-You can do this by being on the delayed branch and then running this code:
+git rebase <forwarded branch> 
+-for a more interactive way, use this: 
+git rebase -i main
