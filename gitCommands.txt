@@ -25,8 +25,9 @@ for updating the branch
 for showing remote branch in another machine
 -git remote show
 
-for updating the remote branch (which is not only in local directory,but in the github the use of which could be exploited by -u)
--git push -u origin main
+-for updating the remote branch (which is not only in local directory,
+-but in the github the use of which could be exploited by -u)
+git push -u origin main
 
 
 1.(UNDO-ing): Revert back the last commit: git reset --soft HEAD~
@@ -34,10 +35,12 @@ Do the changes.
 Add your files to the staging area: git add <filenames or paths> or git add --all
 (REDO-ing): Do the commit: git commit -c ORIG_HEAD or git commit -C ORIG_HEAD
 
-for force undoing (and deleting) unstaged files:
+-for force undoing (and deleting) unstaged files:
 git stash save --keep-index --include-untracked
 git stash drop
 
 -for cloning a particular branch use this
 git clone -b <branchname> <remote-repo-url>
 
+-A shorter way of adding everythin and then committing
+git commit -a -m '....'1
