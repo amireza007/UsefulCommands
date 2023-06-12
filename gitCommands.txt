@@ -39,6 +39,9 @@ Add your files to the staging area: git add <filenames or paths> or git add --al
 git stash save --keep-index --include-untracked
 git stash drop
 
+-Another way of undoing stuff in git(which is a bit safer but sloppier!)
+git commit --amend -m "...."
+
 -for cloning a particular branch use this
 git clone -b <branchname> <remote-repo-url>
 
