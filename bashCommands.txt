@@ -1,0 +1,2 @@
+for copying all contents of a directory recursively (and all subdirectories) into another directory
+ find ./ -name '*.*' -exec cp {} ./newf \;
