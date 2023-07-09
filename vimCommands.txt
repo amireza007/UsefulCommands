@@ -109,3 +109,6 @@ Use :Ag (in conjunction with fzf) to search through all files!
 
 - to join lines
 J 
+
+-to find out where the hell is the defaul config file of nvim 
+ :echo stdpath('config')
