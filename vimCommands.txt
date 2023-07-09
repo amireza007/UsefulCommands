@@ -107,4 +107,5 @@ git config merge.tool nvimdiff
 
 Use :Ag (in conjunction with fzf) to search through all files! 
 
-
+- to join lines
+J 
