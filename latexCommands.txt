@@ -1,0 +1,8 @@
+-for fancy referencing 
+\usepackage[pagebackref=true]{hyperref}
+
+-for better captions
+\usepackage{caption}
+\captionsetup[figure]{labelsep=space}
+
+
