@@ -23,11 +23,13 @@
 
 -regarding the freak' alignment
 \begin{equation*}
-	\left.\begin{aligned}
-	y_3 - y_1 = 8 \\ y_3 - y_2 = 2 \\ y_4 - y_3 = 2 \\ y_5 - y_3 = 4
-	\end{aligned}
-	\right. \implies
-	\quad t_{uk} \cdot \bar{v} = v_1 \cdot t_1 + v_2 \cdot t_2
+	\begin{aligned}
+		w_{13} = y_3 - y_1 &= 8 \\ w_{25} = y_5 - y_2 &= -7 \\ w_{34} = y_4 - y_3 &= 2 \\ w_{35} = y_5 - y_3 &= 4
+	\end{aligned} \implies
+	\begin{aligned}
+	y_1& = -8 \\ y_2& = 11 \\ y_3& = 0 \\ y_4& = 2\\ y_5& = 4
+	\end{aligned} \implies
+\begin{aligned}
+	\bar{w}_{41} &= w_{41} - y_3 + y_1 = 1+2+8 > 0  \\ \bar{w}_{21} &= 10+11+8 > 0 \\ \bar{w}_{45} &= 12+2-4 >0 \\  \bar{w}_{25} &= 2+11 >0
+\end{aligned}
 \end{equation*}
-
-
