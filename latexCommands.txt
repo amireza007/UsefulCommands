@@ -33,3 +33,6 @@
 	\bar{w}_{41} &= w_{41} - y_3 + y_1 = 1+2+8 > 0  \\ \bar{w}_{21} &= 10+11+8 > 0 \\ \bar{w}_{45} &= 12+2-4 >0 \\  \bar{w}_{25} &= 2+11 >0
 \end{aligned}
 \end{equation*}
+
+-note the use of \\ 
+-only can be used right after a text character
