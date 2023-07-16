@@ -112,3 +112,6 @@ J
 
 -to find out where the hell is the defaul config file of nvim 
  :echo stdpath('config')
+
+ -to delete from cursor to the end of line:
+ D
