@@ -1,2 +1,8 @@
 for copying all contents of a directory recursively (and all subdirectories) into another directory
  find ./ -name '*.*' -exec cp {} ./newf \;
+
+#ffmepg: To extract the audio out of the video
+ ffmpeg -i "directory" -map a audio.mp3
+
+#ffmpeg: To merge audio and video into a new one 
+ ffmpeg -i "directory" -c:v copy -map 0:0 (for choosing stream 0 from first file) -map 1:0 (for choosing stream 0 from second file) output.mp4
