@@ -1,0 +1,4 @@
+-To Enter caret mode in visual studio for multi cursor use
+https://learn.microsoft.com/en-us/visualstudio/mac/multi-caret-editing?view=vsmac-2022
+
+<option><ctrl>Mouse_click
