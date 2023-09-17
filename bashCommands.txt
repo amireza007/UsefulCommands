@@ -10,3 +10,6 @@ for copying all contents of a directory recursively (and all subdirectories) int
 #ag (AKA the silver searcher)
 to become case insensitive 
  ag -i "SOME_CRAP" "DIRECTORY"
+
+to find things inside files 
+ grep -r 'text goes here' path_goes_here
