@@ -5,4 +5,4 @@ https://learn.microsoft.com/en-us/visualstudio/mac/multi-caret-editing?view=vsma
 
 On Windows, click on the folder, and then right click, then press e to open the folder on a new window, and hence, achieve the same result as in Mac by pressing commmand when clicking on a folder!
 
-On Windows, Click <Win>+<Right Arrow> to split view.
+On Windows, press <Win>+<Right Arrow> to split view.
