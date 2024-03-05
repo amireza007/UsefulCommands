@@ -1,0 +1,1 @@
+- if you want the Logitech keyboard to auto reconnect after rebooting, you should first connect to the mac (with the user num on the keyboard)
