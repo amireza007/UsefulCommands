@@ -1,1 +1,2 @@
 -  use <ctrl-alt-tab> and then select the app to close, then close with <ctrl>+w
+-use <Win-Key>+E to open a new explorer window
