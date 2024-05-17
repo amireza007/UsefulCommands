@@ -118,3 +118,6 @@ D
 
 -to show number of words in a document
 g + ctrl-g
+
+-close current buffer
+:bd
