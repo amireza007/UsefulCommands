@@ -2,3 +2,4 @@
 -use <Win-Key>+E to open a new explorer window
 -use <Alt><space> + N to minimize selected window
 -use <win><shift><left-arrow> to send window to another monitor
+-use <ctrl>+arrow keys to move faster in windows terminal
