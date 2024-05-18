@@ -54,3 +54,6 @@ git commit -a -m '....'
 git rebase <forwarded branch> 
 -for a more interactive way, use this: 
 git rebase -i main
+
+-To delete a commit 
+git reset --hard HEAD~1
