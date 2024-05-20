@@ -1,3 +1,6 @@
+drawio tips: 
+-select extras>Edit Diagram and add to tooltip this: &lt;div style=&quot;overflow-y: auto; height: 200px &quot; &gt ... &lt; /div &gt;
+
 -To Enter caret mode in visual studio for multi cursor use
 https://learn.microsoft.com/en-us/visualstudio/mac/multi-caret-editing?view=vsmac-2022
 
