@@ -11,3 +11,7 @@ On Windows, click on the folder, and then right click, then press e to open the 
 On Windows, press <Win>+<Right Arrow> to split view.
 
 -use <CTRL>+M to collapse all,
+
+
+In Visual Studio: 
+-use ctrl+alt+mouse to select various parts of text (like the way you do it in files by press and holding ctrl)
