@@ -4,3 +4,4 @@
 -use <win><shift><left-arrow> to send window to another monitor
 -use <ctrl>+arrow keys to move faster in windows terminal
 -<alt>+arrow key to change focus in split view
+- fn+right or left Goes to the end fo the line
