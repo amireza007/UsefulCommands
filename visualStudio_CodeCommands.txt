@@ -12,6 +12,8 @@ On Windows, press <Win>+<Right Arrow> to split view.
 
 -use <CTRL>+M to collapse all,
 
+- to navigate from openned files in tab, press <ctrl>TAB
 
 In Visual Studio: 
+
 -use ctrl+alt+mouse to select various parts of text (like the way you do it in files by press and holding ctrl)
