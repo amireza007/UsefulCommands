@@ -6,4 +6,5 @@ Personally-found-useful commands, including:
 - Qt
 - SQL
 - VS code shortcuts
+- Latex
 - ...
