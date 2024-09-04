@@ -1,7 +1,0 @@
--  use <ctrl-alt-tab> and then select the app to close, then close with <ctrl>+w
--use <Win-Key>+E to open a new explorer window
--use <Alt><space> + N to minimize selected window
--use <win><shift><left-arrow> to send window to another monitor
--use <ctrl>+arrow keys to move faster in windows terminal
--<alt>+arrow key to change focus in split view
-- fn+right or left Goes to the end fo the line

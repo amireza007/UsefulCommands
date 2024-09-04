@@ -82,3 +82,62 @@ This document outlines essential Git commands for managing your version control.
 ----
 * **create a add-commit command alias in git**
 `git config --global alias.add-commit '!git add -A && git commit'`
+
+### Other tips and tricks
+- Suppose you have a branch pointing to a previous commit. In order to make the branch to point to the most recent commit, use the these commands:
+  ```git
+  git checkout <the branch>
+  git reset --hard  <your most recent commit hash>
+  ```
+`git clone --recursive <YOUR_GIT> <FOLDER_NAME_YOU_WANT_TO_EXTRACT_INTO>`
+
+
+```cmake
+project(application)
+
+cmake_minimum_required(VERSION 2.8.0)
+
+find_package(VTK REQUIRED)
+include(${VTK_USE_FILE})
+
+find_package(Qt4 REQUIRED)
+include(${QT_USE_FILE})
+
+# Support for out-of-source build
+INCLUDE_DIRECTORIES(
+ ${CMAKE_CURRENT_BINARY_DIR}
+ ${CMAKE_CURRENT_SOURCE_DIR}
+)
+
+set(SRC
+   optionsDialog.h
+   optionsDialog.cpp
+   main.cpp
+   mainwindow.h
+   mainwindow.cpp
+   application.qrc
+)
+
+set(MOC optionsDialog.h mainwindow.h)
+set(UI optionsDialog.ui mainwindow.ui)
+set(RCC application.qrc)
+
+qt4_wrap_cpp(MOC_GENERATED ${MOC})
+qt4_wrap_ui(UI_GENERATED ${UI})
+qt4_add_resources(RCC_GENERATED ${RCC})
+
+source_group("Form Files" FILES ${UI})
+source_group("Resource Files" FILES ${RCC})
+source_group("Generated Files" FILES ${MOC_GENERATED} ${UI_GENERATED} ${RCC_GENERATED})
+
+add_executable(application
+   ${SRC}
+   ${MOC_GENERATED}
+   ${UI_GENERATED}
+   ${RCC_GENERATED}
+)
+
+target_link_libraries(application ${QT_LIBRARIES} QVTK) # QVTK is for VTK 5.x. For VTK 6, use ${VTK_LIBRARIES} instead
+```
+
+C:/Users/Asus/Projects/FirstVTK/qml;C:/Users/Asus/Projects/FirstVTK/build/Desktop_Qt_6_7_2_MSVC2019_64bit-Debug/imports;C:\Program Files (x86)\VTK\lib\qml\VTK.9.3
