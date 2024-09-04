@@ -1,2 +1,9 @@
 # UsefulCommands
-Useful commands (mostly vim and git)
+Personally-found-useful commands, including:
+- windows
+- vim
+- git
+- Qt
+- SQL
+- VS code shortcuts
+- ...
